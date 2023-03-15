@@ -43,6 +43,12 @@ main {
   text-align: center;
 }
 
+.card__tags-section__tag {
+  border: solid 1px blueviolet;
+  margin: 3px;
+  border-radius: 3px;
+}
+
 .card__button {
   width: 50%;
   height: 5vh;
