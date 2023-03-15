@@ -226,5 +226,11 @@ input:checked + .slider:before {
 
 .section__box {
   display: flex;
+}
+
+.section__box--darkmode {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
   gap: 70px;
 }
