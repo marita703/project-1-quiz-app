@@ -114,6 +114,8 @@ footer {
   justify-content: space-around;
 }
 
+/* This is styling for when the size of the page is bigger than 600px */
+
 @media screen and (min-width: 600px) {
   .card {
     width: 50%;
@@ -121,6 +123,8 @@ footer {
     padding: 20px;
   }
 }
+
+/* TOGLE STYLING added from the website w3schools */
 
 /* The switch - the box around the slider */
 .switch {
@@ -183,4 +187,44 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Styling PROFILIE PAGE */
+
+.section {
+  width: 70%;
+  height: 15vh;
+  margin: 20px;
+}
+
+.section--name-picture {
+  display: flex;
+  height: 20vh;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.section__name--1 {
+  display: flex;
+  align-self: center;
+}
+
+.section--about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__text {
+  text-align: justify;
+}
+
+.section--counters {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.section__box {
+  display: flex;
+  gap: 70px;
 }
