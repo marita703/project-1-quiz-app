@@ -222,6 +222,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   gap: 70px;
+  padding: 20%;
 }
 
 .section__box {
