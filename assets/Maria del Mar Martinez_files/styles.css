@@ -1,0 +1,96 @@
+@import "./variables.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.847);
+}
+
+nav {
+  padding: 10px;
+  position: fixed;
+  background-color: var(--background-color);
+  position: fixed;
+  left: 0;
+  right: 0;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 3px;
+}
+
+nav a {
+  color: var(--fourth-color);
+}
+
+header {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  color: var(--main-color);
+  border: 3px solid var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  position: relative;
+  top: 60px;
+  right: 50%;
+  transform: translate(-50%);
+}
+
+.myphoto {
+  padding: 20px;
+  border-radius: 200px;
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+
+.card {
+  margin: 20px;
+  padding: 30px;
+  border: 3px solid var(--secondary-color);
+}
+
+.card__title {
+  color: var(--third-color);
+}
+
+.card__text {
+  color: white;
+}
+
+.card__list {
+  color: white;
+}
+
+.card__list a {
+  color: var(--fourth-color);
+}
+
+footer {
+  padding: 10px;
+  position: fixed;
+  background-color: var(--background-color);
+  left: 0;
+  right: 0;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  z-index: 1;
+}
