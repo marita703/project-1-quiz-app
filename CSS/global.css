@@ -1,7 +1,15 @@
 :root {
-  --background-color: white;
+  --background-color: #ffffff;
   --main-color: rgb(54, 136, 54);
   --secondary-color: blue;
   --third-color: hotpink;
   --fourth-color: lightblue;
+
+  /* dark-mode colors */
+
+  --background-color-dark: #00005c;
+  --main-color-dark: #c060a1;
+  --secondary-color-dark: #f0caa3;
+  --third-color-dark: #3b185f;
+  --fourth-color-dark: lightblue;
 }
