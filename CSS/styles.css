@@ -7,14 +7,24 @@
   padding: 0;
 }
 
+.dark-mode {
+  --background-color: #00005c;
+  --main-color: #c060a1;
+  --secondary-color: #f0caa3;
+  --third-color: #3b185f;
+  --fourth-color: #add8e6;
+}
+.body {
+  background-color: var(--background-color);
+}
 .main-header__banner {
   width: 100%;
   height: 15vh;
   position: fixed;
   /* top: 0; */
-  background-color: rgb(84, 188, 188);
+  background-color: var(--main-color);
   padding: 20px;
-  border: 3px solid rgb(61, 36, 18);
+  border: 3px solid var(--secondary-color);
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -39,7 +49,7 @@ main {
   height: 50vh;
   margin: 10px;
   padding: 10px;
-  border: solid 2px hotpink;
+  border: solid 2px var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,10 +76,10 @@ main {
 .card__button {
   width: 50%;
   height: 5vh;
-  border: solid 1px cornflowerblue;
+  border: solid var(--secondary-color);
   border-radius: 10px;
   margin: 10px;
-  background-color: rgb(32, 97, 162);
+  background-color: var(--third-color);
 }
 
 .card__button:hover {
@@ -96,9 +106,9 @@ main {
 }
 
 .footer__link--active {
-  border: solid 2px green;
+  border: solid 2px var(--third-color);
   padding: 10px;
-  background-color: rgb(100, 152, 152);
+  background-color: var(--fourth-color);
 }
 
 footer {
@@ -106,9 +116,9 @@ footer {
   height: 15vh;
   position: fixed;
   bottom: 0;
-  background-color: rgb(84, 188, 188);
+  background-color: var(--main-color);
   padding: 20px;
-  border: 3px solid rgb(61, 36, 18);
+  border: 3px solid var(--secondary-color);
   z-index: 1;
   display: flex;
   align-items: center;
