@@ -1,0 +1,46 @@
+/* Styling PROFILIE PAGE */
+
+.section {
+  width: 70%;
+  height: 15vh;
+  margin: 20px;
+}
+
+.section--name-picture {
+  display: flex;
+  height: 20vh;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.section__name--1 {
+  display: flex;
+  align-self: center;
+}
+
+.section--about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__text {
+  text-align: justify;
+}
+
+.section--counters {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 20%;
+}
+
+.section__box {
+  display: flex;
+}
+
+.section__box--darkmode {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
