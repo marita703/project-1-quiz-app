@@ -1,6 +1,8 @@
 @import "./variables.css";
 @import "./components.css";
 @import "./profilepage.css";
+@import "./FormAddTags.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -129,4 +131,10 @@ footer {
     height: 40vh;
     padding: 20px;
   }
+}
+
+.add-cards {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
 }

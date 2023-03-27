@@ -1,0 +1,5 @@
+.add-cards {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+}
