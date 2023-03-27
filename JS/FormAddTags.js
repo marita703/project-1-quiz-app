@@ -64,6 +64,20 @@ form.addEventListener("submit", (event) => {
   document.getElementById("caratersleft1").innerText = "150 characters left";
   document.getElementById("caratersleft2").innerText = "150 characters left";
 
+  // This is the code for the Bonus:
+
+  function bookmarkChange(event) {
+    console.log(event.target);
+    console.log(img.src);
+    if (img.src === "http://127.0.0.1:5500/assets/bookmark.png") {
+      img.src = "http://127.0.0.1:5500/assets/bookmark_filled.png";
+    } else {
+      img.src = "http://127.0.0.1:5500/assets/bookmark.png";
+    }
+  }
+
+  img.addEventListener("click", bookmarkChange);
+
   event.target.reset();
 });
 
