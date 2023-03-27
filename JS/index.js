@@ -50,7 +50,7 @@ buttons.forEach((button, index) =>
 
     console.dir(event.target.textContent);
 
-    // let buttonText = event.target.textContent;
+    // let buttonText = event.target.textContent; this approach, never works
 
     if (event.target.textContent === "Show answer") {
       event.target.textContent = "Hide Answer";

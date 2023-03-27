@@ -3,3 +3,7 @@
   flex-direction: column;
   align-items: center;
 }
+
+.main__form-add-tags {
+  padding: 30vh 0;
+}
