@@ -1,0 +1,15 @@
+:root[data-theme="light"] {
+  --background-color: #ecf2ff;
+  --main-color: #e3dffd;
+  --secondary-color: #e5d1fa;
+  --third-color: #fff4d2;
+  --font-Color: #060606;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #00005c;
+  --main-color: #c060a1;
+  --secondary-color: #f0caa3;
+  --third-color: #3b185f;
+  --font-Color: #add8e6;
+}

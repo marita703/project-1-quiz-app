@@ -1,9 +1,14 @@
-@import "./global.css";
+@import "./variables.css";
+@import "./components.css";
+@import "./profilepage.css";
+@import "./FormAddTags.css";
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
+  color: var(--font-Color);
 }
 
 .main-header__banner {
@@ -11,9 +16,9 @@
   height: 15vh;
   position: fixed;
   /* top: 0; */
-  background-color: rgb(84, 188, 188);
+  background-color: var(--main-color);
   padding: 20px;
-  border: 3px solid rgb(61, 36, 18);
+  border: 3px solid var(--secondary-color);
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -38,7 +43,8 @@ main {
   height: 50vh;
   margin: 10px;
   padding: 10px;
-  border: solid 2px hotpink;
+  border: solid 6px var(--secondary-color);
+  background-color: var(--main-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,31 +54,39 @@ main {
 .card__text {
   padding: 10px;
   text-align: center;
+  background-color: var(--main-color);
 }
 
 .card__tags-section__tag {
-  border: solid 1px blueviolet;
+  border: solid 3px var(--secondary-color);
   margin: 3px;
   border-radius: 3px;
+  background-color: var(--main-color);
 }
 
 .card__tags-section {
   display: flex;
+  gap: 8px;
   align-self: self-start;
   margin: 40px 0 0 0;
+  background-color: var(--main-color);
 }
 
 .card__button {
   width: 50%;
   height: 5vh;
-  border: solid 1px cornflowerblue;
+  border: solid var(--secondary-color);
   border-radius: 10px;
   margin: 10px;
-  background-color: rgb(32, 97, 162);
+  background-color: var(--third-color);
 }
 
 .card__button:hover {
   transform: scale(1.7);
+}
+
+.hidden {
+  display: none;
 }
 
 .bookmark {
@@ -95,9 +109,9 @@ main {
 }
 
 .footer__link--active {
-  border: solid 2px green;
+  border: solid 2px var(--third-color);
   padding: 10px;
-  background-color: rgb(100, 152, 152);
+  background-color: var(--fourth-color);
 }
 
 footer {
@@ -105,9 +119,9 @@ footer {
   height: 15vh;
   position: fixed;
   bottom: 0;
-  background-color: rgb(84, 188, 188);
+  background-color: var(--main-color);
   padding: 20px;
-  border: 3px solid rgb(61, 36, 18);
+  border: 3px solid var(--secondary-color);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -118,120 +132,8 @@ footer {
 
 @media screen and (min-width: 600px) {
   .card {
-    width: 50%;
-    height: 40vh;
+    width: 30%;
+    height: 50vh;
     padding: 20px;
   }
-}
-
-/* TOGLE STYLING added from the website w3schools */
-
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #2196f3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-/* Styling PROFILIE PAGE */
-
-.section {
-  width: 70%;
-  height: 15vh;
-  margin: 20px;
-}
-
-.section--name-picture {
-  display: flex;
-  height: 20vh;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-}
-
-.section__name--1 {
-  display: flex;
-  align-self: center;
-}
-
-.section--about-me {
-  display: flex;
-  flex-direction: column;
-}
-
-.section__text {
-  text-align: justify;
-}
-
-.section--counters {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-  padding: 20%;
-}
-
-.section__box {
-  display: flex;
-}
-
-.section__box--darkmode {
-  margin: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 70px;
 }

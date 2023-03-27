@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>profile</title>
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <script src="./JS/profile.js" defer></script>
   </head>
   <body>
     <header class="main-header">
@@ -60,7 +61,7 @@
         <article class="section__box section__box--darkmode">
           <h4 class="section__box__darkmode">Dark mode</h4>
           <label class="switch">
-            <input type="checkbox" />
+            <input type="checkbox" name="toogle" data-js="toogle" />
             <span class="slider round"></span>
           </label>
         </article>
@@ -76,6 +77,9 @@
           width=" 50px"
           alt="bookmark-button"
       /></a>
+      <a href="./FormAddTags.html" class="footer__link">
+        <img src="./assets/add.png" alt="add image" width="50px" />
+      </a>
       <a href="profile.html" class="footer__link footer__link--active">
         <img
           src="assets/profile_filled.png"
