@@ -30,20 +30,23 @@ bookmarks.forEach((bookmarks) =>
 // This is the code in order for the show answer button works.
 
 const buttons = document.querySelectorAll(".card__button");
-const cards = document.querySelectorAll(".card");
+const answers = document.querySelectorAll(".question-card__answer");
 
 console.log(buttons);
-console.log(cards);
+console.log(answers);
 
-function showAnswer(event, cards) {
+function showAnswer(event) {
   console.log("I clicked");
   console.log(event.target);
-
-  event.currentTarget;
 
   // answers.forEach((answers) => answers.classList.remove("hidden"));
 }
 
-buttons.forEach((buttons) => buttons.addEventListener("click", showAnswer));
+buttons.forEach((buttons, index) =>
+  buttons.addEventListener("click", (event) => {
+    console.log(event.target, index);
+    answers[index].classList.toggle("hidden");
+  })
+);
 
 // this is the code for the third assigment.

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>profile</title>
     <link rel="stylesheet" href="./CSS/styles.css" />
-    <script src="./JS/profile.js" defer></script>
+    <script src="./JS/FormAddTags.js" defer></script>
   </head>
   <body>
     <header class="main-header">
@@ -15,29 +15,30 @@
       </section>
     </header>
     <main>
-      <form action="submit" class="add-cards">
+      <form action="submit" class="card add-cards">
         <legend>Add a new Question!</legend>
         <label for="your-question">Your Question</label>
         <textarea
-          name="your-question"
-          id="your-question"
+          name="yourQuestion"
+          id="yourQuestion"
           placeholder="Write your question"
         ></textarea>
         <label for="your-answer">Your Answer</label>
         <textarea
           type="text"
-          name="your-answer"
-          id="your-answer"
+          name="yourAnswer"
+          id="yourAnswer"
           placeholder="Write your answer"
         ></textarea>
 
         <label for="your-tag">Your Tag</label>
         <input
           type="text"
-          name="your-tag"
-          id="your-tag"
+          name="yourTag"
+          id="yourTag"
           placeholder="Write your tag"
         />
+        <button type="submit" class="submit-button">Submit</button>
       </form>
     </main>
     <footer>
