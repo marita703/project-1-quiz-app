@@ -7,3 +7,10 @@
 .main__form-add-tags {
   padding: 30vh 0;
 }
+
+.caratersleft {
+  display: flexbox;
+  align-self: flex-end;
+  font-size: 10px;
+  color: rgb(98, 90, 122);
+}

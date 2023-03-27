@@ -49,3 +49,37 @@ form.addEventListener("submit", (event) => {
   showButton.textContent = "Show Answer";
   event.target.reset();
 });
+
+// This is the code for the 4th task
+const questionArea = document.querySelector('[id="yourQuestion"]');
+const answerArea = document.querySelector('[id="yourAnswer"]');
+const display1 = document.querySelector(".caratersleft1");
+const display2 = document.querySelector(".caratersleft2");
+
+questionArea.addEventListener("input", (event) => {
+  console.log(event.target);
+  const text = questionArea.value;
+  console.log(text);
+
+  let lengthArray = parseInt(text.length);
+  let result = 150 - lengthArray;
+
+  console.log(lengthArray);
+  console.log(result);
+
+  display1.textContent = `${result} characters left`;
+});
+
+answerArea.addEventListener("input", (event) => {
+  console.log(event.target);
+  const text = answerArea.value;
+  console.log(text);
+
+  let lengthArray = parseInt(text.length);
+  let result = 150 - lengthArray;
+
+  console.log(lengthArray);
+  console.log(result);
+
+  display2.textContent = `${result} characters left`;
+});
