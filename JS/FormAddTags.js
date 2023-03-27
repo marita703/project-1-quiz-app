@@ -1,7 +1,16 @@
+// These are the constants for excersise 3
 const form = document.querySelector(".add-cards");
 let questionText = "";
 let answerText = "";
 let tagText = "";
+
+// These are the constants  for the 4th task
+const questionArea = document.querySelector('[id="yourQuestion"]');
+const answerArea = document.querySelector('[id="yourAnswer"]');
+const display1 = document.querySelector(".caratersleft1");
+const display2 = document.querySelector(".caratersleft2");
+
+// This is the code for excersice 3
 const mainTag = document.querySelector(".main__form-add-tags");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -47,14 +56,13 @@ form.addEventListener("submit", (event) => {
   answerP.textContent = answerText;
   tagDiv.textContent = tagText;
   showButton.textContent = "Show Answer";
+  document.getElementById("caratersleft1").innerText = "150 characters left";
+  document.getElementById("caratersleft2").innerText = "150 characters left";
+
   event.target.reset();
 });
 
 // This is the code for the 4th task
-const questionArea = document.querySelector('[id="yourQuestion"]');
-const answerArea = document.querySelector('[id="yourAnswer"]');
-const display1 = document.querySelector(".caratersleft1");
-const display2 = document.querySelector(".caratersleft2");
 
 questionArea.addEventListener("input", (event) => {
   console.log(event.target);

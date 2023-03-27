@@ -1,11 +1,11 @@
+.main__form-add-tags {
+  padding: 30vh 0;
+}
 .add-cards {
   display: flexbox;
   flex-direction: column;
   align-items: center;
-}
-
-.main__form-add-tags {
-  padding: 30vh 0;
+  height: 60vh;
 }
 
 .caratersleft {
@@ -13,4 +13,23 @@
   align-self: flex-end;
   font-size: 10px;
   color: rgb(98, 90, 122);
+}
+
+.textarea {
+  border-radius: 10px;
+  border: solid 3px var(--secondary-color);
+  width: 70%;
+  height: 100px;
+}
+
+.tag {
+  border-radius: 10px;
+  border: solid 3px var(--secondary-color);
+  width: 70%;
+}
+
+.submit-button {
+  margin-top: 3px;
+  border-radius: 4px;
+  border: 5px solid var(--secondary-color);
 }
