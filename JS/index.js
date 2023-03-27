@@ -42,10 +42,21 @@ function showAnswer(event) {
   // answers.forEach((answers) => answers.classList.remove("hidden"));
 }
 
-buttons.forEach((buttons, index) =>
-  buttons.addEventListener("click", (event) => {
+// the first two querySelectorAll... created two arrays that have exactly the same index... so when I am asigning the event listener to the button, then I can pass as an atribute, the index position
+buttons.forEach((button, index) =>
+  button.addEventListener("click", (event) => {
     console.log(event.target, index);
     answers[index].classList.toggle("hidden");
+
+    console.dir(event.target.textContent);
+
+    // let buttonText = event.target.textContent;
+
+    if (event.target.textContent === "Show answer") {
+      event.target.textContent = "Hide Answer";
+    } else {
+      event.target.textContent = "Show answer";
+    }
   })
 );
 
