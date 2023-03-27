@@ -19,6 +19,8 @@ function toggleBookmark(event) {
   } else {
     this.src = "http://127.0.0.1:5500/assets/bookmark.png";
   }
+
+  // be careful with the Port number... normally is 5500
 }
 
 bookmarks.forEach((bookmarks) =>
