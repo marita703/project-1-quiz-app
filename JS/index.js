@@ -8,11 +8,17 @@ function toggleBookmark(event) {
   let src = this.src;
   console.log(src);
 
-  // if (this.src === "./assets/bookmark.png") {
-  this.src = "./assets/bookmark_filled.png";
+  // if (this.src.endsWith(".png")) {
+  //   this.src.replace(".png", "_filled.png");
   // } else {
-  //   this.src = "./assets/bookmark.png";
+  //   this.src.replace("_filled.png", ".png");
   // }
+
+  if (this.src === "http://127.0.0.1:5500/assets/bookmark.png") {
+    this.src = "http://127.0.0.1:5500/assets/bookmark_filled.png";
+  } else {
+    this.src = "http://127.0.0.1:5500/assets/bookmark.png";
+  }
 }
 
 bookmarks.forEach((bookmarks) =>
