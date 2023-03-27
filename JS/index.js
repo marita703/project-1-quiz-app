@@ -1,15 +1,13 @@
 // This is the code in order for the show answer button works.
 
 const buttons = document.querySelectorAll(".card__button");
-const 
+const answers = document.querySelectorAll(".question-card__answer");
 
 console.log(buttons);
 
 function showAnswer() {
   console.log("I clicked");
-
-  body.all
-
+  answers.forEach((answers) => answers.classList.remove("hidden"));
 }
 
-buttons.forEach((buttons) => buttons.addEventListener("click", iClicked));
+buttons.forEach((buttons) => buttons.addEventListener("click", showAnswer));
