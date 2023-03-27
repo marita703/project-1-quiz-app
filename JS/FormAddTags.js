@@ -50,6 +50,7 @@ form.addEventListener("submit", (event) => {
   sectioncard.classList.add("card");
   questionP.classList.add("card__text");
   answerP.classList.add("question-card__answer");
+  answerP.classList.add("hidden");
   tagDiv.classList.add("card__tags-section__tag");
   showButton.classList.add("card__button");
   bookmark.classList.add("bookmark");
@@ -77,6 +78,19 @@ form.addEventListener("submit", (event) => {
   }
 
   img.addEventListener("click", bookmarkChange);
+
+  function toggleAnswer(event) {
+    console.log(event.target);
+    answerP.classList.toggle("hidden");
+
+    if (showButton.textContent === "Show Answer") {
+      showButton.textContent = "Hide Answer";
+    } else {
+      showButton.textContent = "Show Answer";
+    }
+  }
+
+  showButton.addEventListener("click", toggleAnswer);
 
   event.target.reset();
 });
