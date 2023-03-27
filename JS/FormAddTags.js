@@ -37,11 +37,13 @@ form.addEventListener("submit", (event) => {
   const tagDiv = document.createElement("div");
   const showButton = document.createElement("button");
   const bookmark = document.createElement("div");
+  const img = document.createElement("img");
 
   mainTag.append(sectioncard);
   sectioncard.append(questionP);
   sectioncard.append(showButton);
   sectioncard.append(bookmark);
+  bookmark.append(img);
   sectioncard.append(answerP);
   sectioncard.append(tagDiv);
 
@@ -51,6 +53,9 @@ form.addEventListener("submit", (event) => {
   tagDiv.classList.add("card__tags-section__tag");
   showButton.classList.add("card__button");
   bookmark.classList.add("bookmark");
+  img.setAttribute("src", "./assets/bookmark.png");
+  img.setAttribute("width", "30px");
+  img.setAttribute("data-js", "bookmark");
 
   questionP.textContent = questionText;
   answerP.textContent = answerText;
