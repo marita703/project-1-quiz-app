@@ -27,6 +27,7 @@
 .main-header__banner__title {
   text-align: center;
   text-decoration: underline;
+  background-color: var(--main-color);
 }
 main {
   position: relative;
@@ -93,6 +94,7 @@ main {
   position: absolute;
   top: -15px;
   right: 0;
+  background-color: var(--main-color);
   /* transform: translateY(-50%); */
 }
 
